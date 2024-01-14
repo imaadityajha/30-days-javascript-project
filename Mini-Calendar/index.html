@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="calendar">
+        <div class="left">
+          <p id="date">01</p>
+          <p id="day">sunday</p>
+        </div>
+        <div class="right">
+          <p id="month">january</p>
+          <p id="year">2020</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let getDay = [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thrusday",
+        "friday",
+        "saturday",
+      ];
+
+      let getMonth = [
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december",
+      ];
+      let date = document.getElementById("date");
+      let day = document.getElementById("day");
+      let month = document.getElementById("month");
+      let year = document.getElementById("year");
+
+      let today = new Date();
+
+      day.innerHTML = getDay[today.getDay()];
+      year.innerHTML = today.getFullYear();
+      month.innerHTML = getMonth[today.getMonth()];
+      date.innerHTML = (today.getDate() < 10 ? "0" : "") + today.getDate();
+    </script>
+  </body>
+</html>

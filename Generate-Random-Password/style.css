@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:#002339 ;
+}
+
+.container{
+    width: 90%;
+    max-width: 700px;
+    margin: 200px 10px;
+
+}
+
+h1{
+    text-align: justify;
+    margin-left: 30px;
+    color: #fff;
+    padding: 20px;
+    
+}
+.container h1 span{
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    
+}
+
+.display{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 40px;
+    color: #333;
+    
+}
+
+input{
+    outline: 0;
+    border: 0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 50%;
+    flex: 1;
+    font-size: 24px;
+}
+
+.display img{
+   width: 27px;
+   margin: 0px 10px;
+   cursor: pointer;
+}
+
+button{
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #019f55;
+    color: #fff;
+    margin: 4px 40px;
+    cursor: pointer;
+}
+
+
+    
+
+.container button img{
+    width: 20px;
+    height: 20px;
+    
+    margin: 0px 7px;
+    line-height: 3px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SSID:	Osmium
+Protocol:	Wi-Fi 4 (802.11n)
+Security type:	WPA2-Personal
+Network band:	2.4 GHz
+Network channel:	10
+Link speed (Receive/Transmit):	72/72 (Mbps)
+IPv6 address:	2403:3800:2210:eae3:e128:c3c8:df8e:98bc
+Link-local IPv6 address:	fe80::b50d:48ed:a08c:9759%6
+IPv6 DNS servers:	fe80::1%6
+IPv4 address:	192.168.1.72
+IPv4 DNS servers:	192.168.1.254
+Manufacturer:	Qualcomm Communications Inc.
+Description:	Qualcomm QCA9377 802.11ac Wireless Adapter
+Driver version:	12.0.0.1118
+Physical address (MAC):	64-6C-80-9D-D3-CD
+ */

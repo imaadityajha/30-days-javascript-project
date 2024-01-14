@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: #003049;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form{
+    width:450px;
+    background-color: #fff;
+    color: #333;
+    padding: 30px 20px;
+    border-radius: 5px;
+    
+}
+
+form input{
+  width: 70%;
+  border: none;
+  outline: 0;
+  background-color: #fff;
+  color: #555;
+  font-size: 15px;
+  border-bottom: 2px solid gray;
+  opacity: 0.7;
+  margin: 5px 10px;
+  padding: 10px 0;
+  
+  
+
+}
+
+form input::placeholder{
+    text-align: left;
+}
+form label{
+    display: inline-block;
+    width: 90px;
+    
+}
+
+textarea{
+    font-size:15px;
+    padding: 10px 0;
+    opacity: 0.7;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: 0;
+}
+
+
+
+
+form button{
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 190px;
+    
+}
+#your-message{
+   width: 102px;
+   vertical-align: top;
+   margin: 50px 0; 
+    
+    
+   
+}
+.input-group{
+    position: relative;
+}
+
+.input-group span{
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    color: red;
+}
+
+.input-group span i{
+    color: seagreen;
+}
+
+#submit-error{
+    color: red;
+}

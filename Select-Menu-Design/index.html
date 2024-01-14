@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="selector">
+        <div id="selectField">
+          <p id="selectText">Select Social Media</p>
+          <img src="/SelectMenu_Img/arrow.png" id="img-rotate" />
+        </div>
+
+        <ul id="list" class="hide">
+          <li class="options">
+            <img src="/SelectMenu_Img/facebook.png" />
+            <p>Facebook</p>
+          </li>
+          <li class="options">
+            <img src="/SelectMenu_Img/youtube.png" />
+            <p>Youtube</p>
+          </li>
+          <li class="options">
+            <img src="/SelectMenu_Img/instagram.png" />
+            <p>Instagram</p>
+          </li>
+          <li class="options">
+            <img src="/SelectMenu_Img/twitter.png" />
+            <p>Twitter</p>
+          </li>
+          <li class="options">
+            <img src="/SelectMenu_Img/pinterest.png" />
+            <p>Pinterest</p>
+          </li>
+          <li class="options">
+            <img src="/SelectMenu_Img/whatsapp.png" />
+            <p>WhatsApp</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      var selectField = document.getElementById("selectField");
+      var selectText = document.getElementById("selectText"); // Update the id to "selectField"
+      var options = document.getElementsByClassName("options");
+      var list = document.getElementById("list");
+      var imgRotate = document.getElementById("img-rotate");
+
+      selectField.onclick = function () {
+        list.classList.toggle("hide");
+        imgRotate.classList.toggle("rotate");
+      };
+      for (option of options) {
+        option.onclick = function () {
+          selectText.innerHTML = this.textContent;
+          list.classList.toggle("hide");
+          imgRotate.classList.remove("rotate");
+        };
+      }
+    </script>
+  </body>
+</html>

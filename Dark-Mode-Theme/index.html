@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <header>
+      <nav>
+        <div class="logo">
+          Prajeet <br />
+          The Creator
+        </div>
+        <ul>
+          <li>home</li>
+          <li>about</li>
+          <li>details</li>
+          <li>contact</li>
+          <li>forms</li>
+        </ul>
+        <img src="/images/moon.png" id="icon" />
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>I'm Prajeet Shah</h1>
+        <p>
+          This is my official portfolio website to showcase my all works related
+          to web development and UI design
+        </p>
+        <button>Download CV</button>
+      </div>
+      <div class="container">
+        <img src="/images/himal.jpeg" />
+      </div>
+    </main>
+    <script>
+      let icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "images/sun.png";
+        } else {
+          icon.src = "images/moon.png";
+        }
+      };
+    </script>
+  </body>
+</html>
